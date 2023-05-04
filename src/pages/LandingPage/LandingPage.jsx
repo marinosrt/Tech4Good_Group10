@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Oficina from './components/Oficina/Oficina'
 import BannerContacto from "components/BannerContacto/BannerContacto";
 import Servicios from "./components/Servicios/Servicios";
+import Tarifas from "./components/Tarifas/Tarifas";
 
 const Landing = () => {
 
@@ -17,6 +18,7 @@ const Landing = () => {
                 text={'Te atenderemos encantados en un tour personalizado para que conozcas nuestras instalaciones.'}
                 buttonText={'Reserva un tour'} />
             <Servicios />
+            <Tarifas/>
         </>
     )
 }

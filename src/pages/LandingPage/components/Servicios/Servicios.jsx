@@ -7,7 +7,7 @@ const Servicios = () => {
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                     <h2>h2 Servicios</h2>
-                    <p>Todos nuestros coworkers cuentan con los siguientes servicios:</p>
+                    <p>Nuestros coworkers cuentan con los siguientes servicios:</p>
                 </div>
                 <div class="flex flex-wrap -m-4">
                     <div class="xl:w-1/3 md:w-1/2 p-4">

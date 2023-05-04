@@ -18,16 +18,6 @@ export const Container = styled.section`
     }
 `; 
 
-export const Title = styled.h1`
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-
-    @media screen and (min-width: 640px) {
-        font-size: 3rem;
-    }
-`;
-
 export const Description = styled.p`
     font-size: 1.125rem;
     line-height: 1.75rem;

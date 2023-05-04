@@ -28,6 +28,38 @@ export const GlobalStyle = createGlobalStyle`
     }
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 640px) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 640px) {
+        font-size: 3rem;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 640px) {
+        font-size: 2rem;
+    }
+}
+
 h4 {
     font-size: 1.125rem;
     line-height: 1.5rem;

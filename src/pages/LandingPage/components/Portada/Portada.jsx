@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, Title, Description } from "./Portada.styles";
+import { Container, Description } from "./Portada.styles";
 // import image from '../../../../assets/img/portada.jpg'
 
 const Portada = () => {
 
     return (<>
         <Container>
-            <Title>Microdosing synth tattooed vexillologist</Title>
+            <h1>Microdosing synth tattooed vexillologist</h1>
             <Description>
                 Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing
                 tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt

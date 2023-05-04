@@ -15,10 +15,10 @@ const Oficina = () => {
     return (
 
         <section>
-            <div class="container">
-                <div class="flex flex-col w-full">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
                     <h2>h2 La Oficina</h2>
-                    <p class="lg:w-2/3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum reiciendis, repudiandae laboriosam dolorem consectetur distinctio quo harum tempora odit alias a aliquid veritatis ab neque nulla nostrum provident molestias mollitia!</p>
+                    <p>Descubre nuestras instalaciones de coworking: un espacio moderno y funcional diseñado para inspirarte y hacer crecer tu negocio.</p>
                 </div>
                 {/* <div class="flex flex-wrap">
                     <div class="lg:w-1/3 sm:w-1/2 p-4">
