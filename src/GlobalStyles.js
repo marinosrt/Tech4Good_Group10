@@ -28,4 +28,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 }
 
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
 `;
