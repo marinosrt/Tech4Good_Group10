@@ -20,7 +20,7 @@ const Oficina = () => {
                     <h2>h2 La Oficina</h2>
                     <p>Descubre nuestras instalaciones de coworking: un espacio moderno y funcional diseñado para inspirarte y hacer crecer tu negocio.</p>
                 </div>
-                {/* <div className="flex flex-wrap">
+                <div className="flex flex-wrap">
                     <div className="lg:w-1/3 sm:w-1/2 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina1} />
@@ -93,7 +93,7 @@ const Oficina = () => {
                             </Card>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </section>
     )
