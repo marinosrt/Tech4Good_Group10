@@ -15,79 +15,79 @@ const Oficina = () => {
     return (
 
         <section>
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-col text-center w-full mb-20">
+            <div className="container px-5 py-24 mx-auto">
+                <div className="flex flex-col text-center w-full mb-20">
                     <h2>h2 La Oficina</h2>
                     <p>Descubre nuestras instalaciones de coworking: un espacio moderno y funcional diseñado para inspirarte y hacer crecer tu negocio.</p>
                 </div>
-                {/* <div class="flex flex-wrap">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={oficina1} />
+                {/* <div className="flex flex-wrap">
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina1} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={oficina2} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina2} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={oficina3} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina3} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo1} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo1} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo2} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo2} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={cabinas1} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cabinas1} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={cocina} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cocina} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={salaReuniones} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={salaReuniones} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4">
-                        <div class="flex relative h-80 ">
-                            <img alt="oficina" class="absolute inset-0 w-full h-full object-cover object-center" src={salaConferencias} />
+                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                        <div className="flex relative h-80 ">
+                            <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={salaConferencias} />
                             <Card>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
                             </Card>

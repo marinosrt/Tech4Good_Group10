@@ -3,11 +3,11 @@ import { NavLink } from './Navbar.style';
 
 const Navbar = () => {
     return (
-        <header class="text-gray-600 body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <header className="text-gray-600 body-font">
+            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <span>Sardenya CoWorks</span>
                 {/* // TODO links scroll-down*/}
-                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <NavLink>La oficina</NavLink>
                     <NavLink>Planes</NavLink>
                     <NavLink>Blog</NavLink>
