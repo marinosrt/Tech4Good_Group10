@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+    background-color: #AFD3E2;
+`
+
 export const FeeContainer = styled.div`
+    background-color: #fefefe;
     height: 100%;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 0.5rem;
-    border: 2px solid #ccc;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -18,7 +22,7 @@ export const IconContainer = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #cbd5e0;
+    background-color: #AFD3E2;
     color: #fff;
     border-radius: 50%;
     flex-shrink: 0;
@@ -33,7 +37,7 @@ export const Price = styled.div`
     align-items: center;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #CBD5E0;
 `;
 
 export const Span = styled.span`

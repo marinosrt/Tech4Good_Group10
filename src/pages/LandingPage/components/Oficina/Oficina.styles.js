@@ -6,8 +6,8 @@ export const Card = styled.div`
   position: relative;
   z-index: 10;
   width: 100%;
-  border: 4px solid #CBD5E0;
-  background-color: #FFF;
+  border: 4px solid #F6F1F1;
+  background-color: #FEFEFE;
   opacity: 0;
 
   &:hover {

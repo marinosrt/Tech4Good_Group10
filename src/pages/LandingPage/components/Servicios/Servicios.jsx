@@ -4,13 +4,13 @@ import { IconContainer, ServiceContainer } from "./Servicios.style";
 const Servicios = () => {
     return (
         <section>
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                    <h2>h2 Servicios</h2>
+            <div className="container px-5 pt-20 pb-12 mx-auto flex flex-col items-center">
+                <div className="flex flex-col text-center w-full mb-16">
+                    <h2>Servicios</h2>
                     <p>Nuestros coworkers cuentan con los siguientes servicios:</p>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                <div className="sm:flex flex-wrap lg:w-3/4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">
@@ -20,7 +20,7 @@ const Servicios = () => {
                             <h4>Wifi de alta velocidad</h4>
                         </ServiceContainer>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">
@@ -30,7 +30,7 @@ const Servicios = () => {
                             <h4>Recepción de paquetería</h4>
                         </ServiceContainer>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">
@@ -40,7 +40,7 @@ const Servicios = () => {
                             <h4>Acceso seguro 24/7</h4>
                         </ServiceContainer>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">
@@ -50,7 +50,7 @@ const Servicios = () => {
                             <h4>Uso de impresora</h4>
                         </ServiceContainer>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">
@@ -60,7 +60,7 @@ const Servicios = () => {
                             <h4>Salas de reuniones</h4>
                         </ServiceContainer>
                     </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                    <div className="sm:w-1/2 xl:w-1/3 p-4">
                         <ServiceContainer>
                             <IconContainer>
                                 <span className="material-symbols-outlined">

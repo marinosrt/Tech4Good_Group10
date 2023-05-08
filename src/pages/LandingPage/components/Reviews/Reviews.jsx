@@ -44,7 +44,7 @@ const Reviews = () => {
 
     return (
         <section>
-            <div className="container px-5 py-24 mx-auto">
+            <div className="container px-5 pt-20 pb-12 mx-auto">
                 <div className="flex flex-wrap -m-4">
                     {testimonials.map((testimonial, id) => (
                         <div key={id} className="lg:w-1/3 lg:mb-0 mb-6 p-4">

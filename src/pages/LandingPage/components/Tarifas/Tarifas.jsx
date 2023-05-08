@@ -1,5 +1,5 @@
 import React from "react";
-import { Price, IconContainer, FeeContainer, Span } from "./Tarifas.style";
+import { Section, Price, IconContainer, FeeContainer, Span } from "./Tarifas.style";
 
 const Tarifas = () => {
 
@@ -12,9 +12,9 @@ const Tarifas = () => {
     const FiestaOficinaIncludes = ['Acceso sin límite al espacio 24/7', 'Mesa fija en escritorio compartido', ...AllFeesInclude, 'Hasta 250 fotocopias en b/n y 50 en color al mes', 'Salas de reunión: 20h/mes', '50% de descuento en salas de reunión']
 
     return (
-        <section>
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
+        <Section>
+            <div className="container px-5 pt-20 pb-12 mx-auto">
+                <div className="flex flex-col text-center w-full mb-16">
                     <h2>Tarifas</h2>
                     <p>Nuestras tarifas de coworking se adaptan a cualquier tipo de negocio, ya sea grande, pequeño, estable o en expansión. ¿Qué necesitas?</p>
                 </div>
@@ -80,7 +80,7 @@ const Tarifas = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }
 

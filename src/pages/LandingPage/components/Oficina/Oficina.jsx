@@ -15,9 +15,9 @@ const Oficina = () => {
     return (
 
         <section>
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col text-center w-full mb-20">
-                    <h2>h2 La Oficina</h2>
+            <div className="container px-5 pt-20 pb-12 mx-auto">
+                <div className="flex flex-col text-center w-full mb-16">
+                    <h2>La Oficina</h2>
                     <p>Descubre nuestras instalaciones de coworking: un espacio moderno y funcional diseñado para inspirarte y hacer crecer tu negocio.</p>
                 </div>
                 <div className="flex flex-wrap">
