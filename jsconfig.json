@@ -7,6 +7,9 @@
             ],
             "components/*": [
                 "components/*"
+            ],
+            "GlobalStyles": [
+                "GlobalStyles"
             ]
         }
     },
