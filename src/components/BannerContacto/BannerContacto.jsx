@@ -1,20 +1,24 @@
-import React from "react";
-// import {Button } from './bannerContacto.style'
+import React, { useContext } from "react";
+import { Section } from './BannerContacto.style';
+import ModalContext from "applications/ModalContext";
 
 const BannerContacto = (props) => {
+
+    const { showModal, toggleModal } = useContext(ModalContext);
+
     return (
         <>
-            <section>
-                <div className="container px-5 py-24 mx-auto">
+            <Section>
+                <div className="container px-5 pt-16 pb-14 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h3>h3 {props.title}</h3>
+                        <h3>{props.title}</h3>
                         <p className="lg:w-2/3 mx-auto">{props.text}</p>
                     </div>
                     <div className="text-center">
-                        <button>{props.buttonText}</button>
+                        <button onClick={toggleModal}>{props.buttonText}</button>
                     </div>
                 </div>
-            </section>
+            </Section>
         </>
     )
 }
