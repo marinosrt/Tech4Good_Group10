@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Section } from './BannerContacto.style';
-import ModalContext from "applications/ModalContext";
+import ModalContext from "context/ModalContext";
 
 const BannerContacto = (props) => {
 

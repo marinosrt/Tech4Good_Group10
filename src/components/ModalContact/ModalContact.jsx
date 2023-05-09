@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ModalContext from "applications/ModalContext";
+import ModalContext from "context/ModalContext";
 import { ModalOverlay, ModalContainer } from "./ModalContact.style";
 
 const ModalContact = () => {

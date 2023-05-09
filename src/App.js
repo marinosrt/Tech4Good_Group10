@@ -1,7 +1,7 @@
 import ModalContact from 'components/ModalContact/ModalContact';
 import { GlobalStyle } from './GlobalStyles';
 import Router from './routes/routes';
-import { ModalProvider } from 'applications/ModalContext';
+import { ModalProvider } from 'context/ModalContext';
 
 function App() {
   return (
