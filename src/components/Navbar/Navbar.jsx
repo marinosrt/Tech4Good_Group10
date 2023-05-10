@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { DesktopMenu, MobileMenu, NavLink, MobileMenuButton } from './Navbar.style';
+import { DesktopMenu, MobileMenu, NavLink, HamburguerLink, HamburguerButton } from './Navbar.style';
 import { Logo } from 'GlobalStyles'
 import { Link } from 'react-router-dom';
 import ModalContext from "context/ModalContext";
@@ -13,24 +13,24 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
 
     return (
         <header>
-            <div className="container mx-auto flex flex-row items-center p-5">
+            <div className="container mx-auto flex flex-row justify-between items-center p-5">
                 <Link to="/">
                     <Logo>Sardenya CoWorks</Logo>
                 </Link>
 
                 <MobileMenu isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(false)}>
-                    <NavLink onClick={scrollToOfficeSection}>La oficina</NavLink>
-                    <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
-                    <NavLink>Blog</NavLink>
-                    <NavLink className="special-link">Contacto</NavLink>
-                    <NavLink className="special-link"><Link to="/auth">Iniciar sesión</Link></NavLink>
+                    <HamburguerLink onClick={scrollToOfficeSection}>La oficina</HamburguerLink>
+                    <HamburguerLink onClick={scrollToPlansSection}>Planes</HamburguerLink>
+                    <HamburguerLink>Blog</HamburguerLink>
+                    <HamburguerLink className="special-link">Contacto</HamburguerLink>
+                    <HamburguerLink className="special-link"><Link to="/auth">Iniciar sesión</Link></HamburguerLink>
                 </MobileMenu>
 
-                <DesktopMenu className="md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 px-4">
+                <DesktopMenu className="md:ml-auto">
                     <NavLink onClick={scrollToOfficeSection}>La oficina</NavLink>
                     <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
                     <NavLink>Blog</NavLink>
-                    <div>
+                    <div className='flex gap-4 ml-6'>
                         <button onClick={toggleModal}>
                             Contacto
                         </button>
@@ -40,31 +40,11 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
                     </div>
                 </DesktopMenu>
 
-                <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} last>
-                    <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        {isMenuOpen ? (
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        ) : (
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        )}
+                <HamburguerButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                </MobileMenuButton>
+                </HamburguerButton>
             </div>
         </header>
     );
