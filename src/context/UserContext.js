@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useEffect } from 'react';
 import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
@@ -9,11 +9,12 @@ import {
 
 } from "firebase/auth";
 import { auth } from '../firebase/firebaseConfig';
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const UserContext = createContext();
 
 export const UserContextProvider = ({ children }) => {
-    const [user, setUser] = useState(false);
+    const [user, setUser] = useLocalStorage(false);
     
     const signUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
 
@@ -31,7 +32,7 @@ export const UserContextProvider = ({ children }) => {
             setUser(currentUser);
         });
         return () => { unsubscribe() }
-    }, [])
+    })
 
 
 

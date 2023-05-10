@@ -29,7 +29,7 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
                         <button>
                             Contacto
                         </button>
-                        <Link to="/auth">
+                        <Link to="/miespacio">
                             <button>Iniciar sesión</button>
                         </Link>
                     </div>

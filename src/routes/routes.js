@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from "../pages/LandingPage/LandingPage"
-import Login from 'pages/Login/Login';
-import Signup from 'pages/Login/Signup';
+import Login from 'pages/Auth/components/Login';
+import Signup from 'pages/Auth/components/Signup';
 import MiEspacio from 'pages/MiEspacio/MiEspacio';
 import ProtectedRoute from './ProtectedRoute'
-import Auth from 'pages/Login/Auth';
+import Auth from 'pages/Auth/Auth';
 
 
 const Router = () => {

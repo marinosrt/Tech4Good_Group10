@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Signup from "./Signup";
-import Login from "./Login";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 import Navbar from "components/Navbar/Navbar";
 
 const Auth = () => {
