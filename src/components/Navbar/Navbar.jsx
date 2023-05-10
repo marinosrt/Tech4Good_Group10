@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DesktopMenu, MobileMenu, NavLink, MobileMenuButton } from './Navbar.style';
 import { Logo } from 'GlobalStyles'
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,28 +9,29 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
     return (
         <header>
             <div className="container mx-auto flex flex-row items-center p-5">
-                <Logo>Sardenya CoWorks</Logo>
+                <Link to="/">
+                    <Logo>Sardenya CoWorks</Logo>
+                </Link>
+
                 <MobileMenu isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(false)}>
                     <NavLink onClick={scrollToOfficeSection}>La oficina</NavLink>
                     <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
                     <NavLink>Blog</NavLink>
                     <NavLink className="special-link">Contacto</NavLink>
-                    <NavLink className="special-link">Login</NavLink>
+                    <NavLink className="special-link"><Link to="/auth">Iniciar sesión</Link></NavLink>
                 </MobileMenu>
+
                 <DesktopMenu className="md:ml-auto flex flex-wrap items-center text-base justify-center gap-5 px-4">
                     <NavLink onClick={scrollToOfficeSection}>La oficina</NavLink>
                     <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
-                    {/* // TODO link a blog*/}
                     <NavLink>Blog</NavLink>
                     <div>
-                        {/* // TODO botón despliega modal contacto*/}
                         <button>
                             Contacto
                         </button>
-                        {/* // TODO link a página de autenticación*/}
-                        <button>
-                            Login
-                        </button>
+                        <Link to="/auth">
+                            <button>Iniciar sesión</button>
+                        </Link>
                     </div>
                 </DesktopMenu>
 

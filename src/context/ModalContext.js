@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 
 const ModalContext = createContext();
 
-export const ModalProvider = ({ children }) => {
+export const ModalContextProvider = ({ children }) => {
     const [showModal, setShowModal] = useState(false);
 
     const toggleModal = () => {

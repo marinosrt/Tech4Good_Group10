@@ -4,7 +4,7 @@ import ModalContext from "context/ModalContext";
 
 const BannerContacto = (props) => {
 
-    const { showModal, toggleModal } = useContext(ModalContext);
+    const { toggleModal } = useContext(ModalContext);
 
     return (
         <>

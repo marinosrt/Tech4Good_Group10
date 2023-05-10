@@ -29,7 +29,7 @@ export const DesktopMenu = styled.nav`
 `;
 
 
-export const NavLink = styled.a`
+export const NavLink = styled.p`
     margin-bottom: 10px;
     color: #333;
     text-decoration: none;

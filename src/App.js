@@ -1,16 +1,19 @@
 import ModalContact from 'components/ModalContact/ModalContact';
 import { GlobalStyle } from './GlobalStyles';
 import Router from './routes/routes';
-import { ModalProvider } from 'context/ModalContext';
+import { ModalContextProvider } from 'context/ModalContext';
+import { UserContextProvider } from 'context/UserContext';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <ModalProvider>
-        <ModalContact />
-        <Router />
-      </ModalProvider>
+      <UserContextProvider>
+        <ModalContextProvider>
+          <ModalContact />
+          <Router />
+        </ModalContextProvider>
+      </UserContextProvider>
     </>
   );
 }

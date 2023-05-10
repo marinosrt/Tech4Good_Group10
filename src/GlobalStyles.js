@@ -7,10 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		/* font-family: 'Overpass', sans-serif;
-        font-weight: 200;
-        background-color: #101111;
-        color: white; */
+        background-color: #F6F1F1;
 	}
 
 
@@ -21,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
     padding: 0.5rem 1.5rem;
     border-radius: 0.25rem;
-    margin: 0 0.5rem 0 0.5rem;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 
