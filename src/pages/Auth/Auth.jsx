@@ -15,7 +15,6 @@ const Auth = () => {
 
     return (
         <div>
-            <Navbar/>
             {showLogin ? <Login toggleComponent={toggleComponent} /> : <Signup toggleComponent={toggleComponent} />}
         </div>
     )

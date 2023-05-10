@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import UserContext from "context/UserContext";
 import { Link, useNavigate } from "react-router-dom";
-import { Label, Input, OrContainer, OrSpan, GoogleButton, Span } from "./Login&SignUp.style"
+import { OrContainer, OrSpan, GoogleButton, Span } from "./Login&SignUp.style"
 
 const Login = ({ toggleComponent }) => {
 
@@ -46,16 +46,16 @@ const Login = ({ toggleComponent }) => {
 
                     <form >
                         <div className="mb-4">
-                            <Label htmlFor="Email" >Email</Label>
-                            <Input
+                            <label htmlFor="Email" >Email</label>
+                            <input
                                 onChange={(e) => setEmail(e.target.value)}
                                 type="email"
                                 id="Email"
                                 name="email" />
                         </div>
                         <div className="mb-4">
-                            <Label htmlFor="Password">Contraseña</Label>
-                            <Input
+                            <label htmlFor="Password">Contraseña</label>
+                            <input
                                 onChange={(e) => setPassword(e.target.value)}
                                 type="password"
                                 id="Password"

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import UserContext from "context/UserContext";
 import { Link, useNavigate } from "react-router-dom";
-import { Label, Input, OrContainer, OrSpan, GoogleButton, Span } from "./Login&SignUp.style"
+import { OrContainer, OrSpan, GoogleButton, Span } from "./Login&SignUp.style"
 
 const Signup = ({ toggleComponent }) => {
 
@@ -47,16 +47,16 @@ const Signup = ({ toggleComponent }) => {
                     <form >
 {/* //TODO implementar inputs nombre y apellidos */}
                         {/* <div className="mb-4">
-                            <Label htmlFor="Name" >Nombre</Label>
-                            <Input
+                            <label htmlFor="Name" >Nombre</label>
+                            <input
                                 onChange={(e) => setName(e.target.value)}
                                 type="text"
                                 id="name"
                                 name="name" />
                         </div>
                         <div className="mb-4">
-                            <Label htmlFor="surname" >Apellidos</Label>
-                            <Input
+                            <label htmlFor="surname" >Apellidos</label>
+                            <input
                                 onChange={(e) => setSurname(e.target.value)}
                                 type="text"
                                 id="surname"
@@ -65,8 +65,8 @@ const Signup = ({ toggleComponent }) => {
 
 
                         <div className="mb-4">
-                            <Label htmlFor="Email" >Email</Label>
-                            <Input
+                            <label htmlFor="Email" >Email</label>
+                            <input
                                 onChange={(e) => setEmail(e.target.value)}
                                 type="email"
                                 id="Email"
@@ -75,16 +75,16 @@ const Signup = ({ toggleComponent }) => {
 
                         {/* //TODO implementar email confirmation */}
                         {/* <div className="mb-4">
-                            <Label htmlFor="EmailConfirmation" >Confirma tu email</Label>
-                            <Input
+                            <label htmlFor="EmailConfirmation" >Confirma tu email</label>
+                            <input
                                 onChange={(e) => setEmailConfimation(e.target.value)}
                                 type="EmailConfirmation"
                                 id="EmailConfirmation"
                                 name="emailConfirmation" />
                         </div> */}
                         <div className="mb-4">
-                            <Label htmlFor="Password">Contraseña</Label>
-                            <Input
+                            <label htmlFor="Password">Contraseña</label>
+                            <input
                                 onChange={(e) => setPassword(e.target.value)}
                                 type="password"
                                 id="Password"
@@ -93,8 +93,8 @@ const Signup = ({ toggleComponent }) => {
 
                         {/* //TODO implementar confirmación de contraseña */}
                         {/* <div className="mb-4">
-                            <Label htmlFor="PasswordConfirmation">Confirma la contraseña</Label>
-                            <Input
+                            <label htmlFor="PasswordConfirmation">Confirma la contraseña</label>
+                            <input
                                 type="password"
                                 id="PasswordConfirmation"
                                 name="passwordConfirmation" />

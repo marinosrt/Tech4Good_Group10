@@ -1,33 +1,5 @@
 import styled from 'styled-components';
 
-export const Input = styled.input`
-    width: 100%;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    outline: none;
-    color: #718096;
-    padding: 0.5rem 0.75rem;
-    line-height: 1.6;
-    transition: color 0.2s ease-in-out;
-
-    &:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.5);
-        outline: none;
-    }
-
-    &:focus::placeholder {
-        color: transparent;
-    }
-`;
-
-export const Label = styled.label`
-line-height: 1.75; 
-font-size: 0.875rem; 
-color: #6b7280;
-`;
-
 export const OrContainer = styled.div`
     text-align: center;
     border-bottom: 1px solid #E2E8F0;
