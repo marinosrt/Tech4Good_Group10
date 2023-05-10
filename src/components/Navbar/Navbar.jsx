@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { DesktopMenu, MobileMenu, NavLink, MobileMenuButton } from './Navbar.style';
 import { Logo } from 'GlobalStyles'
 import { Link } from 'react-router-dom';
+import ModalContext from "context/ModalContext";
+
 
 const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const { toggleModal } = useContext(ModalContext);
 
     return (
         <header>
@@ -26,7 +31,7 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
                     <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
                     <NavLink>Blog</NavLink>
                     <div>
-                        <button>
+                        <button onClick={toggleModal}>
                             Contacto
                         </button>
                         <Link to="/miespacio">
