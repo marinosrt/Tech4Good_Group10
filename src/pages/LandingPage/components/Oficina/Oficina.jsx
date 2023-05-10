@@ -21,75 +21,75 @@ const Oficina = () => {
                     <p>Descubre nuestras instalaciones de coworking: un espacio moderno y funcional diseñado para inspirarte y hacer crecer tu negocio.</p>
                 </div>
                 <div className="flex flex-wrap">
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
-                        <div className="flex relative h-80 ">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+                        <div className="flex relative h-80">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina1} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Instalaciones modernas y espaciosas</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina2} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Áreas de descanso</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={oficina3} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Escritorios compartidos</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo1} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Cubículos aislados para mayor privacidad</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cubiculo2} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Cubículos aislados para mayor privacidad</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cabinas1} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Cabinas insonorizadas para llamdas y videoconferencias</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={cocina} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Cocina equipada y comedor</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={salaReuniones} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Salas de reuniones</p>
                             </Card>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 sm:w-1/2 p-4">
+                    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
                         <div className="flex relative h-80 ">
                             <img alt="oficina" className="absolute inset-0 w-full h-full object-cover object-center" src={salaConferencias} />
                             <Card>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ratione totam minima aut, nihil dolor corporis optio cumque excepturi blanditiis facilis natus consectetur quisquam deserunt odit porro! Accusamus, tempore doloribus?</p>
+                                <p>Sala de conferencias</p>
                             </Card>
                         </div>
                     </div>

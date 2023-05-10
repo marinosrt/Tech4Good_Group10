@@ -1,5 +1,6 @@
 import React from "react";
 import { Section, Price, IconContainer, FeeContainer, Span } from "./Tarifas.style";
+import { Link } from "react-router-dom";
 
 const Tarifas = () => {
 
@@ -13,7 +14,7 @@ const Tarifas = () => {
 
     return (
         <Section>
-            <div className="container px-5 pt-20 pb-12 mx-auto">
+            <div className="container px-5 pt-20 pb-20 mx-auto">
                 <div className="flex flex-col text-center w-full mb-16">
                     <h2>Tarifas</h2>
                     <p>Nuestras tarifas de coworking se adaptan a cualquier tipo de negocio, ya sea grande, pequeño, estable o en expansión. ¿Qué necesitas?</p>
@@ -32,10 +33,12 @@ const Tarifas = () => {
                                     </IconContainer>
                                     {include}
                                 </div>)}
-                            {/* //TODO link button a modal contacto */}
-                            <button className="flex mt-auto">
-                                Quiero contratarla
-                            </button>
+                            <Link to="/auth" className="w-full mt-auto">
+                                <button className="w-full">
+                                    Quiero contratarla
+                                </button>
+                            </Link>
+
                         </FeeContainer>
                     </div>
 
@@ -52,10 +55,11 @@ const Tarifas = () => {
                                     </IconContainer>
                                     {include}
                                 </div>)}
-                            {/* //TODO link button a modal contacto */}
-                            <button className="flex mt-auto">
-                                Quiero contratarla
-                            </button>
+                            <Link to="/auth" className="w-full mt-auto">
+                                <button className="w-full">
+                                    Quiero contratarla
+                                </button>
+                            </Link>
                         </FeeContainer>
                     </div>
 
@@ -72,10 +76,11 @@ const Tarifas = () => {
                                     </IconContainer>
                                     {include}
                                 </div>)}
-                            {/* //TODO link button a modal contacto */}
-                            <button className="flex mt-auto">
-                                Quiero contratarla
-                            </button>
+                            <Link to="/auth" className="w-full mt-auto">
+                                <button className="w-full">
+                                    Quiero contratarla
+                                </button>
+                            </Link>
                         </FeeContainer>
                     </div>
                 </div>

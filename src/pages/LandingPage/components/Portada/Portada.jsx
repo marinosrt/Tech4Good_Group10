@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Title, Subtitle } from "./Portada.styles";
+import ModalContext from "context/ModalContext";
 
 const Portada = () => {
+
+    const { toggleModal } = useContext(ModalContext);
 
     return (<>
         <Container>
@@ -10,8 +13,7 @@ const Portada = () => {
                 Impresionantes oficinas privadas y espacios de coworking en el Eixample de Barcelona.
             </Subtitle>
             <div>
-                {/* //TODO botón despliega modal de contacto */}
-                <button>Button</button>
+                <button onClick={toggleModal}>¡Prueba un día gratis!</button>
             </div>
         </Container>
     </>

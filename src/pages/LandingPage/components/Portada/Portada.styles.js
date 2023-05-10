@@ -13,7 +13,7 @@ export const Container = styled.section`
     text-align: center;
     padding: 5rem 1rem;
     position: relative;
-    z-index: -2;
+    z-index: 0;
 
     &:before {
         content: "";
@@ -22,7 +22,7 @@ export const Container = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: -1;
 
     @media screen and (min-width: 640px) {
@@ -34,23 +34,29 @@ export const Container = styled.section`
 export const Title = styled.h1`
     color: white;
     font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 4rem;
 
     @media screen and (min-width: 640px) {
-        font-size: 4rem;
+        font-size: 4.5rem;
+        margin-top: 3rem;
+    margin-bottom: 6rem;
     }
 `
 
 export const Subtitle = styled.p`
     color: white;
     font-size: 1.25rem;
-    line-height: 1.75rem;
-    margin-bottom: 2rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
 
     @media screen and (min-width: 640px) {
         font-size: 1.5rem;
-        line-height: 1.875rem;
+        line-height: 2.5rem;
     }
 `;
 
