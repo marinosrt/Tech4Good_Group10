@@ -23,7 +23,7 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
                     <HamburguerLink onClick={scrollToPlansSection}>Planes</HamburguerLink>
                     <HamburguerLink>Blog</HamburguerLink>
                     <HamburguerLink className="special-link">Contacto</HamburguerLink>
-                    <HamburguerLink className="special-link"><Link to="/auth">Iniciar sesión</Link></HamburguerLink>
+                    <HamburguerLink className="special-link"><Link to="/user-area">Iniciar sesión</Link></HamburguerLink>
                 </MobileMenu>
 
                 <DesktopMenu className="md:ml-auto">
@@ -34,7 +34,7 @@ const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
                         <button onClick={toggleModal}>
                             Contacto
                         </button>
-                        <Link to="/miespacio">
+                        <Link to="/user-area">
                             <button>Iniciar sesión</button>
                         </Link>
                     </div>

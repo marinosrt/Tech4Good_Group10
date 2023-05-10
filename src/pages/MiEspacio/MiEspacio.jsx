@@ -1,13 +1,12 @@
-import React from "react";
-import Header from "./components/Header/Header";
+import MiPlan from "./components/MiPlan/MiPlan";
 
 const MiEspacio = () => {
 
     return (
         <>
-            <Header />
+            <MiPlan/>
         </>
     )
 }
 
-export default MiEspacio;
+export default MiEspacio

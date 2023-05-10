@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-    background-color: #AFD3E2;
-`
-
 export const FeeContainer = styled.div`
     background-color: #fefefe;
     height: 100%;

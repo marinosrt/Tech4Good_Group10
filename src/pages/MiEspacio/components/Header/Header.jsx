@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import UserContext from "context/UserContext";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const { user, logOut } = useContext(UserContext);
     console.log(user)
@@ -9,6 +12,7 @@ const Header = () => {
     const handleLogOut = async () => {
         try {
             await logOut();
+            navigate("/")
         } catch (err) {
             console.log(err.message)
         }

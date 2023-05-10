@@ -98,10 +98,12 @@ color: #6b7280;
 
 
 export const Logo = styled.span`
-font-family: 'Manrope', sans-serif;
-    font-size: 1.25rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
     font-weight: 500;
-    color: #1a202c;
+    color: #19A7CE;
+    padding: 0.6rem 1rem;
+    border: #19A7CE solid 3px;
 
     @media (min-width: 640px) {
         font-size: 1.5rem;

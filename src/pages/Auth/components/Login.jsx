@@ -17,7 +17,7 @@ const Login = ({ toggleComponent }) => {
         e.preventDefault();
         try {
             await logIn(email, password);
-            navigate("/miespacio")
+            navigate("/user-area")
         }
         catch (err) {
             setError(err.message)
@@ -29,7 +29,7 @@ const Login = ({ toggleComponent }) => {
 
         try {
             await googleSignIn();
-            navigate("/miespacio");
+            navigate("/user-area");
         } catch (err) {
             setError(err.message)
         }
