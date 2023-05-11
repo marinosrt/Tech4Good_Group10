@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Section } from './BannerContacto.style';
 import ModalContext from "context/ModalContext";
 
 const BannerContacto = (props) => {
@@ -8,7 +7,7 @@ const BannerContacto = (props) => {
 
     return (
         <>
-            <Section>
+            <section className="bg-mylight">
                 <div className="container px-5 pt-16 pb-14 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
                         <h3>{props.title}</h3>
@@ -18,7 +17,7 @@ const BannerContacto = (props) => {
                         <button onClick={toggleModal}>{props.buttonText}</button>
                     </div>
                 </div>
-            </Section>
+            </section>
         </>
     )
 }

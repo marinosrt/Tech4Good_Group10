@@ -1,4 +1,4 @@
-import MiTarifa from "./components/MiTarifa/MiTarifa";
+import MiTarifa from "./MiTarifa/MiTarifa";
 
 const MiEspacio = () => {
 

@@ -3,7 +3,7 @@ import LandingPage from "../pages/LandingPage/LandingPage"
 import ProtectedRoute from './ProtectedRoute'
 import Auth from 'pages/Auth/Auth';
 import UserArea from 'pages/UserArea/UserArea';
-import MiEspacio from 'pages/UserArea/MiEspacio';
+import MiEspacio from 'pages/UserArea/components/Inicio/Inicio';
 import Reservas from 'pages/UserArea/components/Reservas/Reservas';
 import Step1 from 'pages/UserArea/components/Reservas/steps/Step1';
 import Step2 from 'pages/UserArea/components/Reservas/steps/Step2';
