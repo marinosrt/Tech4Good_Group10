@@ -8,6 +8,7 @@ import Reservas from 'pages/UserArea/components/Reservas/Reservas';
 import Step1 from 'pages/UserArea/components/Reservas/steps/Step1';
 import Step2 from 'pages/UserArea/components/Reservas/steps/Step2';
 import Step3 from 'pages/UserArea/components/Reservas/steps/Step3';
+import Error404 from 'pages/Error404';
 
 
 const Router = () => {
@@ -28,6 +29,7 @@ const Router = () => {
                     </Route>
                 </Route>
 
+                <Route path="/*" element={<Error404 />} />
             </Routes>
         </BrowserRouter>
     )
