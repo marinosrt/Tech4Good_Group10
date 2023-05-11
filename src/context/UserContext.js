@@ -6,6 +6,7 @@ import {
     onAuthStateChanged,
     GoogleAuthProvider,
     signInWithPopup,
+    updateProfile
 
 } from "firebase/auth";
 import { auth } from '../firebase/firebaseConfig';
@@ -14,11 +15,18 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 const UserContext = createContext();
 
 export const UserContextProvider = ({ children }) => {
-    const [user, setUser] = useLocalStorage("user",{});
     
-    const signUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
+    const [user, setUser] = useLocalStorage("user", {});
 
-    const logIn = (email, password) => signInWithEmailAndPassword(auth, email, password);
+    const signUp = async (email, password, displayName) => {
+        const { user } = await createUserWithEmailAndPassword(auth, email, password);
+        await updateProfile(user, { displayName });
+        setUser(user);
+    };
+
+    const logIn = async (email, password) => {
+        await signInWithEmailAndPassword(auth, email, password);
+    };
 
     const logOut = () => signOut(auth);
 

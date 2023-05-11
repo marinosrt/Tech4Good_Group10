@@ -5,18 +5,38 @@ import { OrContainer, OrSpan, GoogleButton, Span } from "./Login&SignUp.style"
 
 const Signup = ({ toggleComponent }) => {
 
+    const [name, setName] = useState("");
+    const [surname, setSurname] = useState("");
     const [email, setEmail] = useState("");
+    const [emailConfirmation, setEmailConfirmation] = useState("");
     const [password, setPassword] = useState("");
+    const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
     const [error, setError] = useState("");
 
     const { signUp, googleSignIn } = useContext(UserContext);
 
     const navigate = useNavigate();
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const displayName = `${surname}, ${name}`;
+
+        if (email !== emailConfirmation) {
+            setError("Los emails no coinciden");
+            return;
+        }
+
+        if (password !== passwordConfirmation) {
+            setError("Las contraseñas no coinciden");
+            return;
+        }
+
+
         try {
-            await signUp(email, password);
+            await signUp(email, password, displayName);
             navigate("/user-area")
         }
         catch (err) {
@@ -45,8 +65,7 @@ const Signup = ({ toggleComponent }) => {
                     {error && <div>{error}</div>}
 
                     <form >
-{/* //TODO implementar inputs nombre y apellidos */}
-                        {/* <div className="mb-4">
+                        <div className="mb-4">
                             <label htmlFor="Name" >Nombre</label>
                             <input
                                 onChange={(e) => setName(e.target.value)}
@@ -61,7 +80,7 @@ const Signup = ({ toggleComponent }) => {
                                 type="text"
                                 id="surname"
                                 name="surname" />
-                        </div> */}
+                        </div>
 
 
                         <div className="mb-4">
@@ -73,15 +92,14 @@ const Signup = ({ toggleComponent }) => {
                                 name="email" />
                         </div>
 
-                        {/* //TODO implementar email confirmation */}
-                        {/* <div className="mb-4">
+                        <div className="mb-4">
                             <label htmlFor="EmailConfirmation" >Confirma tu email</label>
                             <input
-                                onChange={(e) => setEmailConfimation(e.target.value)}
+                                onChange={(e) => setEmailConfirmation(e.target.value)}
                                 type="EmailConfirmation"
                                 id="EmailConfirmation"
                                 name="emailConfirmation" />
-                        </div> */}
+                        </div>
                         <div className="mb-4">
                             <label htmlFor="Password">Contraseña</label>
                             <input
@@ -91,14 +109,14 @@ const Signup = ({ toggleComponent }) => {
                                 name="password" />
                         </div>
 
-                        {/* //TODO implementar confirmación de contraseña */}
-                        {/* <div className="mb-4">
+                        <div className="mb-4">
                             <label htmlFor="PasswordConfirmation">Confirma la contraseña</label>
                             <input
+                                onChange={(e) => setPasswordConfirmation(e.target.value)}
                                 type="password"
                                 id="PasswordConfirmation"
                                 name="passwordConfirmation" />
-                        </div> */}
+                        </div>
                     </form>
 
                     <button onClick={handleSubmit}>Registrarme</button>

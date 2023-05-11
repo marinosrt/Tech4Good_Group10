@@ -62,6 +62,7 @@ const Login = ({ toggleComponent }) => {
                                 name="password"/>
                         </div>
                     </form>
+                    {/* //TODO restablecer contraseña */}
 
                     <button onClick={handleSubmit}>Inicia sesión</button>
 
