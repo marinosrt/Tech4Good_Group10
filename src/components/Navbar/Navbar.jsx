@@ -4,7 +4,7 @@ import { Logo } from 'GlobalStyles'
 import { Link } from 'react-router-dom';
 import ModalContext from "context/ModalContext";
 
-
+//TODO implementar este header en la page auth
 const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);

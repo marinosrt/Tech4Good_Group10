@@ -5,7 +5,7 @@ import Oficina from './components/Oficina/Oficina'
 import BannerContacto from "components/BannerContacto/BannerContacto";
 import Servicios from "./components/Servicios/Servicios";
 import Tarifas from "./components/Tarifas/Tarifas";
-import Reviews from "./components/Reviews/Reviews";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "components/Footer/Footer";
 
 const Landing = () => {
@@ -46,7 +46,7 @@ const Landing = () => {
                 <Tarifas />
             </div>
 
-            <Reviews />
+            <Testimonials />
 
             <BannerContacto
                 title={'¿Necesitas más información?'}
