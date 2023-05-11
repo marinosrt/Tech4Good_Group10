@@ -1,6 +1,5 @@
 import React from "react";
-import { Logo } from 'GlobalStyles'
-import { StyledLine } from "pages/LandingPage/components/Reviews/Reviews.style";
+import { Logo } from 'GlobalStyles';
 import { FooterSection, SubSection } from "./Footer.style";
 
 const Footer = () => {
@@ -10,9 +9,7 @@ const Footer = () => {
             <div className="flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div className="w-1/3 py-20 md:mx-0 mx-auto md:pl-20 text-center md:text-left">
                     <Logo>Sardenya CoWorks</Logo>
-                    <br />
-                    <StyledLine />
-                    <p className="py-4">Calle Sardenya 662<br /> 08025 Barcelona</p>
+                    <p className="pt-12 pb-4">Calle Sardenya 662<br /> 08025 Barcelona</p>
                     <p>+34 93 123 45 67</p>
                 </div>
 

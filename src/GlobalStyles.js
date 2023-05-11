@@ -27,31 +27,33 @@ export const GlobalStyle = createGlobalStyle`
 
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 500;
         color: #1a202c;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
         margin-bottom: 0.5rem;
 
         @media (min-width: 640px) {
-            font-size: 3rem;
+            font-size: 2.250rem;
         }
     }
 
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 500;
         color: #1a202c;
         margin-bottom: 0.5rem;
 
         @media (min-width: 640px) {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
 
     h4 {
-        font-size: 1.2rem;
+        font-size: 1.125rem;
         line-height: 1.5rem;
         font-weight: 500;
         color: #1a202c;
@@ -88,11 +90,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     }
 
-label{
-line-height: 1.75; 
-font-size: 0.875rem; 
-color: #6b7280;
-}
+    label {
+        line-height: 1.75; 
+        font-size: 0.875rem; 
+        color: #6b7280;
+    }
 `;
 
 

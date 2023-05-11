@@ -41,7 +41,7 @@ export const Title = styled.h1`
     @media screen and (min-width: 640px) {
         font-size: 4.5rem;
         margin-top: 3rem;
-    margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
 `
 
@@ -49,9 +49,10 @@ export const Subtitle = styled.p`
     color: white;
     font-size: 1.25rem;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     line-height: 2.125rem;
     margin-bottom: 3rem;
-    text-transform: uppercase;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
 
     @media screen and (min-width: 640px) {
