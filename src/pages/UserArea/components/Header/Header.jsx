@@ -20,16 +20,16 @@ const Header = () => {
 
     return (
         <>
-            <header aria-label="Page Header">
+            <header className="bg-white">
                 <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <div className="text-center sm:text-left">
-                            <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-                                Welcome Back, {user.email}
-                            </h1>
+                            <h3>
+                                Bienvenid@, {user.email}
+                            </h3>
 
-                            <p className="mt-1.5 text-sm text-gray-500">
-                                Let's write a new blog post! 🎉
+                            <p>
+                                ¡Manos a la obra! 💼💻
                             </p>
                         </div>
 

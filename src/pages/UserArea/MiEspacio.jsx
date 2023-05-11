@@ -1,10 +1,10 @@
-import MiPlan from "./components/MiPlan/MiPlan";
+import MiTarifa from "./components/MiTarifa/MiTarifa";
 
 const MiEspacio = () => {
 
     return (
         <>
-            <MiPlan/>
+            <MiTarifa/>
         </>
     )
 }

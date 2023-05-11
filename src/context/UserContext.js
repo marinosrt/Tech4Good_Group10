@@ -14,7 +14,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 const UserContext = createContext();
 
 export const UserContextProvider = ({ children }) => {
-    const [user, setUser] = useLocalStorage(false);
+    const [user, setUser] = useLocalStorage("user",{});
     
     const signUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
 

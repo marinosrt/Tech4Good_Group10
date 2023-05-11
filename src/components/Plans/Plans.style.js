@@ -9,6 +9,7 @@ export const FeeContainer = styled.div`
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    border: #AFD3E2 solid 1px;
 `;
 
 export const IconContainer = styled.div`

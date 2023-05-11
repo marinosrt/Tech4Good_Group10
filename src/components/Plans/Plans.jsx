@@ -15,7 +15,7 @@ const Plans = () => {
 
     return (
         <div className="flex flex-wrap justify-center -m-4">
-            <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div className="p-4 xl:w-1/3 md:w-1/2 w-full max-w-md">
                 <FeeContainer>
                     <h4>PICOTEO</h4>
                     <Price>20€<Span>/día</Span></Price>
@@ -28,7 +28,7 @@ const Plans = () => {
                             </IconContainer>
                             {include}
                         </div>)}
-                    <Link to="/user-area/reservas" className="w-full mt-auto">
+                    <Link to="/user-area/reservas?tarifa=picoteo" className="w-full mt-auto">
                         <button className="w-full">
                             Quiero contratarla
                         </button>
@@ -37,7 +37,7 @@ const Plans = () => {
                 </FeeContainer>
             </div>
 
-            <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div className="p-4 xl:w-1/3 md:w-1/2 w-full max-w-md">
                 <FeeContainer>
                     <h4>A GUSTO</h4>
                     <Price>180€<Span>/mes</Span></Price>
@@ -50,7 +50,7 @@ const Plans = () => {
                             </IconContainer>
                             {include}
                         </div>)}
-                    <Link to="/user-area/reservas" className="w-full mt-auto">
+                    <Link to="/user-area/reservas?tarifa=agusto" className="w-full mt-auto">
                         <button className="w-full">
                             Quiero contratarla
                         </button>
@@ -58,7 +58,7 @@ const Plans = () => {
                 </FeeContainer>
             </div>
 
-            <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div className="p-4 xl:w-1/3 md:w-1/2 w-full max-w-md">
                 <FeeContainer>
                     <h4>FIESTA DE OFICINA</h4>
                     <Price>320€<Span>/mes</Span></Price>
@@ -71,7 +71,7 @@ const Plans = () => {
                             </IconContainer>
                             {include}
                         </div>)}
-                    <Link to="/user-area/reservas" className="w-full mt-auto">
+                    <Link to="/user-area/reservas?tarifa=fiesta-oficina" className="w-full mt-auto">
                         <button className="w-full">
                             Quiero contratarla
                         </button>
