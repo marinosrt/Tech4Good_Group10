@@ -19,7 +19,7 @@ const Auth = () => {
 
 
     return (
-        <div className="bg-myblue3 h-screen">
+        <div className="bg-myblue3 min-h-screen">
             <header className="bg-white">
                 <nav className="container mx-auto flex flex-row justify-between items-center p-5">
                     <Link to="/">
@@ -34,7 +34,16 @@ const Auth = () => {
                     </div>
                 </nav>
             </header>
-            {showLogin ? <Login toggleComponent={toggleComponent} /> : <Signup toggleComponent={toggleComponent} />}
+
+            <section>
+                <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
+                    <div className="bg-white mx-auto md:2/3 lg:w-1/2 rounded-lg p-8 flex flex-col w-full mt-10 md:mt-0">
+                        {showLogin
+                            ? <Login toggleComponent={toggleComponent} />
+                            : <Signup toggleComponent={toggleComponent} />}
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
