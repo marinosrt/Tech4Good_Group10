@@ -11,17 +11,17 @@ export const GlobalStyle = createGlobalStyle`
 
 
     button {
-    background-color: #19A7CE;
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+        background-color: #19A7CE;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-        background-color: #146C94;
+        &:hover {
+            background-color: #146C94;
     }
 }
 

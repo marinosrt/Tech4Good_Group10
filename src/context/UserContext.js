@@ -1,4 +1,6 @@
 import React, { createContext, useEffect } from 'react';
+import { auth } from '../firebase/firebaseConfig';
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
@@ -7,10 +9,9 @@ import {
     GoogleAuthProvider,
     signInWithPopup,
     updateProfile
-
 } from "firebase/auth";
-import { auth } from '../firebase/firebaseConfig';
-import { useLocalStorage } from "../hooks/useLocalStorage";
+
+
 
 const UserContext = createContext();
 

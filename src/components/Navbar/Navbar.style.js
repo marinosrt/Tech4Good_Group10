@@ -16,7 +16,7 @@ export const NavLink = styled.p`
     margin-bottom: 10px;
     color: #333;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
     cursor: pointer;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocalStorage } from "hooks/useLocalStorage";
 import Plans from "components/Plans/Plans";
-import { ArrowButton, Icon } from "./MiTarifa.style";
+import { ArrowButton } from "./MiTarifa.style";
 
 
 const MiTarifa = () => {
@@ -17,38 +17,33 @@ const MiTarifa = () => {
     return (
         <div className="rounded-xl bg-white shadow-md p-4 md:p-6 lg:p-8">
 
-            {!user.plan?.confirmation && (<div className="block md:flex justify-between items-baseline gap-5 p-4">
-                <h3 className="mt-4">
-                    Todavía no tienes una tarifa contratada
-                </h3>
-
-                <div className="sm:flex sm:gap-4">
-                    <ArrowButton onClick={handleShowPlans}>
-                        Ver tarifas
-                        <Icon showPlans={showPlans} className="material-symbols-outlined">
-                            keyboard_arrow_down
-                        </Icon>
+            {!user.plan?.confirmation && (
+                <div className="block md:flex justify-between items-center gap-5 p-4">
+                    <h3 className="mt-4">
+                        Todavía no tienes una tarifa contratada
+                    </h3>
+                    <ArrowButton onClick={handleShowPlans} showPlans={showPlans} className="material-symbols-outlined">
+                        expand_circle_down
                     </ArrowButton>
-                </div>
-            </div>)}
+                </div>)}
 
-            {user.plan?.confirmation && (<div className="block md:flex justify-between items-baseline gap-5 p-4">
-                <h3 className="mt-4">
-                    Tu tarifa es actual es {user.plan.name}
-                </h3>
+            {user.plan?.confirmation && (
+                <div className="p-4">
+                    <h3 className="mt-4">
+                        Tu tarifa es actual es {user.plan.name}
+                    </h3>
 
-                <div className="sm:flex sm:gap-4">
-                    <ArrowButton onClick={handleShowPlans}>
-                        Cambiar tarifa
-                        <Icon showPlans={showPlans} className="material-symbols-outlined">
-                            keyboard_arrow_down
-                        </Icon>
-                    </ArrowButton>
-                </div>
-            </div>)}
+                    <div className="sm:flex sm:gap-4">
+                        <span
+                            onClick={handleShowPlans}
+                            showPlans={showPlans}
+                            className="text-myblue2 cursor-pointer">
+                            ¿Quieres cambiar de tarifa?
+                        </span>
+                    </div>
+                </div>)}
 
-            {showPlans && <Plans />}
-
+            {showPlans && <div className="pt-10"><Plans /></div>}
         </div>
     )
 }
