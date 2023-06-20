@@ -8,11 +8,7 @@
 <p align="left">🔍 Integramos una base de datos H2 con datos de Opendata_BCN .json.<br>🗺️ Constuímos un mapa con filtors de busqueda para navegar el mercado.<br>🎯 Resultado: Facilitamos a emprendedores a optimizar su decision en un mar de possibles locales de negocios en Barcelona.</p>
 
 ###
-
-<h2 align="left">Getting started</h2>
-
-###
-
-<p align="left">En el repositorio encontraréis los repos de frontend, data y backend.<br><br>Para inicializar el proyecto, necesitaréis:<br><br>- Open</p>
+<h4>Repositorios</h4>
+<p align="left">En el el repositorio del proyecto encontraréis el trabajo de Front-End, Back-End y Data-Science.<br><br>Para inicializar el proyecto, necesitaréis:<br><br>- Open</p>
 
 
