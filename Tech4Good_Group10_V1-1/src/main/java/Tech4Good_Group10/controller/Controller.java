@@ -21,7 +21,7 @@ public class Controller {
      * @param types the types of commerce
      * @return list of business
      */
-    @PostMapping("/findBusinessByType")
+    @PostMapping("/getBusinessByType")
     public List<Business> listBusiness(@RequestBody List<String> types) {
         return service.getBusinessByType(types);
     }
