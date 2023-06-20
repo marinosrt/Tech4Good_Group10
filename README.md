@@ -1,7 +1,7 @@
 <h2 align="left">Find-A-Spot</h2>
 
 <h4>¿Quiénes somos?</h4>
-<p align="left">Welcome to Find-A-Spot, the platform that promotes local commerce in Barcelona. We assist merchants and real estate investors in discovering ideal locations to grow their business. With our specialised tool, we help find the perfect storefront, considering financial capabilities, competitive strategies, and location preferences. Join Find-A-Spot and grow your local business in Barcelona.</p>
+<p align="left">Bienvenidos a Find-A-Spot, la plataforma que impulsa el comercio local en Barcelona. Ayudamos a comerciantes e inversores inmobiliarios a descubrir las ubicaciones ideales para maximizar sus ingresos. Con nuestra herramientas especializadas, te ayudamos a encontrar el local perfecto, considerando tus requisitos de financiación, estrategias para competir y tus preferencias de ubicación. Únete a Find-a-Spot y haz crecer tu negocio local en Barcelona.</p>
 
 ###
 <h4>¿Como lo hacemos?</h4>
