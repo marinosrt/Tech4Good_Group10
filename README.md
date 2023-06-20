@@ -7,6 +7,10 @@
 <h3>¿Cómo lo hacemos?</h3>
 <p align="left">🔍 Integramos una base de datos H2 con datos de Opendata_BCN .json.<br>🗺️ Constuímos un mapa con filtors de busqueda para navegar el mercado.<br>🎯 Resultado: Facilitamos a emprendedores a optimizar su decision en un mar de possibles locales de negocios en Barcelona.</p>
 
+<h3>Repositorios</h3>
+<p align="left">En el repositorio del proyecto encontraréis el trabajo de Front-End, Back-End y Data-Science.<br>
+El trabajo de Front-End puede ser consultado en https://github.com/lauralopezalo/Hack4Good.git
+
 ###
 <h3>¿Qué sigue?</h3>
 
