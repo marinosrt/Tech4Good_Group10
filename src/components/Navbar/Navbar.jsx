@@ -1,43 +1,29 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { DesktopMenu, MobileMenu, NavLink, HamburguerLink, HamburguerButton } from './Navbar.style';
-import { Logo } from 'GlobalStyles'
 import { Link } from 'react-router-dom';
-import ModalContext from "context/ModalContext";
 
-//TODO implementar este header en la page auth
-const Navbar = ({ scrollToOfficeSection, scrollToPlansSection }) => {
+
+
+const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const { toggleModal } = useContext(ModalContext);
 
     return (
         <header>
             <div className="container mx-auto flex flex-row justify-between items-center p-5">
                 <Link to="/">
-                    <Logo>Sardenya CoWorks</Logo>
                 </Link>
 
                 <MobileMenu isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(false)}>
-                    <HamburguerLink onClick={scrollToOfficeSection}>La oficina</HamburguerLink>
-                    <HamburguerLink onClick={scrollToPlansSection}>Planes</HamburguerLink>
-                    <HamburguerLink>Blog</HamburguerLink>
-                    <HamburguerLink className="special-link">Contacto</HamburguerLink>
-                    <HamburguerLink className="special-link"><Link to="/user-area">Iniciar sesión</Link></HamburguerLink>
+                    <HamburguerLink onClick={console.log("hi")}>Quiénes somos</HamburguerLink>
+                    <HamburguerLink onClick={console.log("hi")}>Qué hacemos</HamburguerLink>
+                    <HamburguerLink conClick={console.log("hi")}>Contacto</HamburguerLink>
                 </MobileMenu>
 
                 <DesktopMenu className="md:ml-auto">
-                    <NavLink onClick={scrollToOfficeSection}>La oficina</NavLink>
-                    <NavLink onClick={scrollToPlansSection}>Planes</NavLink>
-                    <NavLink>Blog</NavLink>
-                    <div className='flex gap-4 ml-6'>
-                        <button onClick={toggleModal}>
-                            Contacto
-                        </button>
-                        <Link to="/user-area">
-                            <button>Iniciar sesión</button>
-                        </Link>
-                    </div>
+                    <NavLink onClick={console.log("hi")}>Quiénes somos</NavLink>
+                    <NavLink onClick={console.log("hi")}>Qué hacemos</NavLink>
+                    <NavLink onClick={console.log("hi")}>Contacto</NavLink>
                 </DesktopMenu>
 
                 <HamburguerButton onClick={() => setIsMenuOpen(!isMenuOpen)}>

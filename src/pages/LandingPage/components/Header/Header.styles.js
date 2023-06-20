@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Img from 'assets/img/portada.jpg'
+import Img from 'assets/img/que-ver-en-barcelona-mapa.jpg'
 
 export const Container = styled.section`
     background-image: url(${Img});
