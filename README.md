@@ -1,6 +1,6 @@
 <h2 align="left">About the project</h2>
 
-<p align="left">Welcome to Find-A-Spot, the platform that promotes local commerce in Barcelona. We assist merchants and real estate investors in discovering ideal locations to invest in to grow their business. With our specialised tool, we business owners and decision-makers find the perfect storefront, considering financial capabilities, competitive strategies, and location preferences. Join Find-A-Spot and grow your local business in Barcelona..</p>
+<p align="left">Welcome to Find-A-Spot, the platform that promotes local commerce in Barcelona. We assist merchants and real estate investors in discovering ideal locations to grow their business. With our specialised tool, we help find the perfect storefront, considering financial capabilities, competitive strategies, and location preferences. Join Find-A-Spot and grow your local business in Barcelona..</p>
 
 ###
 
