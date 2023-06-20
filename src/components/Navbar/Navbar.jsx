@@ -4,26 +4,21 @@ import { Link } from 'react-router-dom';
 
 
 
-const Navbar = ({scrollToAboutUs, scrollToWhatWeDo}) => {
+const Navbar = ({scrollToAboutUs}) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <header>
             <div className="container mx-auto flex flex-row justify-between items-center p-5">
-                <Link to="/">
+                <Link to="/"><h4 className='text-xl font-bold'>Find a spot</h4>
                 </Link>
-{/* TODO onClick Contacto */}
                 <MobileMenu isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(false)}>
                     <HamburguerLink onClick={scrollToAboutUs}>Quiénes somos</HamburguerLink>
-                    <HamburguerLink onClick={scrollToWhatWeDo}>Qué hacemos</HamburguerLink>
-                    <HamburguerLink conClick={console.log("hi")}>Contacto</HamburguerLink>
                 </MobileMenu>
 
                 <DesktopMenu className="md:ml-auto">
                     <NavLink onClick={scrollToAboutUs}>Quiénes somos</NavLink>
-                    <NavLink onClick={scrollToWhatWeDo}>Qué hacemos</NavLink>
-                    <NavLink onClick={console.log("hi")}>Contacto</NavLink>
                 </DesktopMenu>
 
                 <HamburguerButton onClick={() => setIsMenuOpen(!isMenuOpen)}>

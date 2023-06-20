@@ -1,16 +1,13 @@
-import React from "react";
-import { Link } from 'react-router-dom';
 import { Container, Title, Subtitle } from "./Header.styles";
 
 const Portada = () => {
 
     return (<>
         <Container>
-            <Title>Hack4Good</Title>
+            <Title>Find a spot</Title>
             <Subtitle className="w-2/3 lg:w-1/2 mx-auto">
-                Ayuda al comerciante local
+                Encuentra tu espacio para el éxito
             </Subtitle>
-            
         </Container>
     </>
     )

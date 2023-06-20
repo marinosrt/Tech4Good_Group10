@@ -97,20 +97,10 @@ const array = ['Serveis a les empreses i oficines',
     'Altres ( per exemple VENDING)'];
 
 
-const markersHardcode = [
-    { name: "fruteria", coordinates: [2.1744, 41.4036] },
-    { name: "fruteria", coordinates: [2.1526, 41.4136] },
-    { name: "floristeria", coordinates: [2.1649, 41.3916] },
-    { name: "carniceria", coordinates: [2.1733, 41.3818] },
-];
-
-
 const Map = () => {
 
     const [markers, setMarkers] = useState([]);
-
     const [selectedCategories, setSelectedCategories] = useState([]);
-
 
 
     const handleInputChange = (value) => {
@@ -163,34 +153,31 @@ const Map = () => {
     return (<>
 
 
-
-
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto flex flex-wrap">
-                <div class="flex flex-wrap w-full">
-                    <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-                        <div className="h-96 w-3/5 overflow-y-auto">
+        <section className="text-gray-600 body-font lg:px-24 min-h-screen">
+            <div className="container px-5 lg:py-12 mx-auto flex flex-wrap">
+                <div className="flex flex-col lg:flex-row w-full">
+                    <div className="lg:w-2/5 md:pr-10 md:py-24">
+                        <div className="h-96 lg:w-3/5 overflow-y-auto">
                             {array.map((item, id) => (<>
-                                <label class="flex flex-row gap-4">
+                                <label className="flex flex-row gap-4 px-12">
                                     <input
                                         key={id}
                                         type="checkbox"
                                         checked={selectedCategories.includes(item)}
                                         onChange={() => handleInputChange(item)}
                                     />
-                                    <h4 class="text-gray-900 font-ligth text-sm"> {item}</h4>
+                                    <h4 className="text-gray-900 font-ligth text-sm"> {item}</h4>
                                 </label>
                             </>))}
                         </div>
                     </div>
-                    <div class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" >
 
-
+                    <div className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-2" >
                         <div className="flex flex-grow flex-col mx-14">
                             <ComposableMap
                                 projectionConfig={{
                                     scale: 220000,
-                                    center: [2.1, 41.4],
+                                    center: [2.2, 41.4],
                                 }}
                             >
                                 <Geographies geography={geoUrl}>
@@ -207,7 +194,7 @@ const Map = () => {
                                 </Geographies>
                                 {markers.map(({ Nom_Activitat, Longitud, Latitud, markerOffset, id }) => (
                                     <Marker key={id} coordinates={[Longitud, Latitud]}>
-                                        <circle r={3} fill="#F00" stroke="#fff" strokeWidth={1} />
+                                        <circle r={3} fill="#4F46E5" stroke="#fff" strokeWidth={1} />
                                         <text
                                             textAnchor="middle"
                                             y={markerOffset}
@@ -224,11 +211,13 @@ const Map = () => {
                     </div>
                 </div>
             </div>
-        </section>
 
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-center">
-            <Link to="/">Volver al Home</Link>
-        </button>
+            <div className="flex justify-center pt:24 lg:mt-2 lg:mb-12">
+                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6  focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    <Link to="/">Volver</Link>
+                </button>
+            </div>
+        </section>
     </>
     );
 };
