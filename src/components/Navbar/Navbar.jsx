@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Navbar = () => {
+const Navbar = ({scrollToAboutUs, scrollToWhatWeDo}) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,16 +13,16 @@ const Navbar = () => {
             <div className="container mx-auto flex flex-row justify-between items-center p-5">
                 <Link to="/">
                 </Link>
-
+{/* TODO onClick Contacto */}
                 <MobileMenu isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(false)}>
-                    <HamburguerLink onClick={console.log("hi")}>Quiénes somos</HamburguerLink>
-                    <HamburguerLink onClick={console.log("hi")}>Qué hacemos</HamburguerLink>
+                    <HamburguerLink onClick={scrollToAboutUs}>Quiénes somos</HamburguerLink>
+                    <HamburguerLink onClick={scrollToWhatWeDo}>Qué hacemos</HamburguerLink>
                     <HamburguerLink conClick={console.log("hi")}>Contacto</HamburguerLink>
                 </MobileMenu>
 
                 <DesktopMenu className="md:ml-auto">
-                    <NavLink onClick={console.log("hi")}>Quiénes somos</NavLink>
-                    <NavLink onClick={console.log("hi")}>Qué hacemos</NavLink>
+                    <NavLink onClick={scrollToAboutUs}>Quiénes somos</NavLink>
+                    <NavLink onClick={scrollToWhatWeDo}>Qué hacemos</NavLink>
                     <NavLink onClick={console.log("hi")}>Contacto</NavLink>
                 </DesktopMenu>
 
