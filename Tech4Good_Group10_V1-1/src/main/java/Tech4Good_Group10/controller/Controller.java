@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-
 @Tag(name = "Model Controller")
 public class Controller {
     private final AppService service;
