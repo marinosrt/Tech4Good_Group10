@@ -12,6 +12,8 @@
 
 <h2 align="left">About the project</h2>
 
+<p align="left">Bienvenidos a Find-A-Spot, la plataforma que impulsa el comercio local en Barcelona. Ayudamos a comerciantes e inversores inmobiliarios a descubrir las ubicaciones ideales para maximizar sus ingresos. Con nuestra herramientas especializadas, te ayudamos a encontrar el local perfecto, considerando tus requisitos de financiación, estrategias para competir y tus preferencias de ubicación. Únete a Find-a-Spot y haz crecer tu negocio local en Barcelona.</p>
+
 ###
 
 <p align="left">🔍 Integrated H2 database that reads from a .json file.<br>🗺️ Interactive Map with all available filters.<br>🎯 Goals: Select the different filters in order to see different types of business in Barcelona.</p>
