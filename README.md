@@ -4,11 +4,7 @@
 
 ###
 
-<p align="left">🔍 Integrated H2 database that reads from a .json file.<br>🗺️ Interactive Map with all available filters.<br>🎯 Goals: Select the different filters in order to see different types of business in Barcelona.</p>
-
-###
-
-<h3 align="left">This is a React and Java project created to help future local business owners to decide the best Barcelona district to open up their future local shops.<br><br>You can filter the type of business you'd like to check -either one or many- and they will prompt out on the map.</h3>
+<p align="left">🔍 Integrando una base de datos H2 leyendo de un fichero .json.<br>🗺️ Mapa interactivo con posibilidad de selecionar filtros..<br>🎯 Goals: Facilitar al usuario acotar criterios de búsqueda para ver diferentes tipos de negocios en Barcelona.</p>
 
 ###
 
