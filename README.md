@@ -8,10 +8,10 @@
 
 ###
 
-<h1 align="left">Getting started</h1>
+<h2 align="left">Getting started</h2>
 
 ###
 
-<p align="left">Here you can find the three different repos: frontend, data and backend.<br><br>In order to run the project, you will need:<br><br>- Open</p>
+<p align="left">En el repositorio encontraréis los repos de frontend, data y backend.<br><br>Para inicializar el proyecto, necesitaréis:<br><br>- Open</p>
 
 
