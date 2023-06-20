@@ -2,6 +2,7 @@ import React from "react";
 import Portada from "./components/Header/Header";
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from "components/Footer/Footer";
+import WhatWeDo from "./components/WhatWeDo/WhatWeDo";
 
 const Landing = () => {
 
@@ -24,6 +25,7 @@ const Landing = () => {
             />
 
             <Portada />
+            <WhatWeDo/>
 
 
             <Footer />
