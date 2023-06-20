@@ -9,6 +9,6 @@
 
 ###
 <h4>Repositorios</h4>
-<p align="left">En el el repositorio del proyecto encontraréis el trabajo de Front-End, Back-End y Data-Science.<br><br>Para inicializar el proyecto, necesitaréis:<br><br>- Open</p>
+<p align="left">En el repositorio del proyecto encontraréis el trabajo de Front-End, Back-End y Data-Science.<br><br>Para inicializar el proyecto, necesitaréis:<br><br>- Open</p>
 
 
